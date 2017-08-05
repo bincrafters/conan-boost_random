@@ -3,11 +3,13 @@ from conans import ConanFile, tools, os
 class BoostRandomConan(ConanFile):
     name = "Boost.Random"
     version = "1.64.0"
-    generators = "txt"
+    generators = "txt" 
+    settings = "os", "arch", "compiler", "build_type"
     url = "https://github.com/boostorg/random"
     description = "Please visit http://www.boost.org/doc/libs/1_64_0/libs/libraries.htm"
     license = "www.boost.org/users/license.html"
     lib_short_name = "random"
+    build_requires = "Boost.Build/1.64.0@bincrafters/testing" 
     requires =  "Boost.Assert/1.64.0@bincrafters/testing", \
                       "Boost.Config/1.64.0@bincrafters/testing", \
                       "Boost.Core/1.64.0@bincrafters/testing", \
