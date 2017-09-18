@@ -12,19 +12,19 @@ class BoostRandomConan(ConanFile):
     lib_short_names = ["random"]
     options = {"shared": [True, False]}
     default_options = "shared=False"
-    build_requires = "Boost.Generator/0.0.1@bincrafters/testing" 
-    requires =  "Boost.Assert/1.65.1@bincrafters/testing", \
-                      "Boost.Config/1.65.1@bincrafters/testing", \
-                      "Boost.Core/1.65.1@bincrafters/testing", \
-                      "Boost.Integer/1.65.1@bincrafters/testing", \
-                      "Boost.Math/1.65.1@bincrafters/testing", \
-                      "Boost.Mpl/1.65.1@bincrafters/testing", \
-                      "Boost.Range/1.65.1@bincrafters/testing", \
-                      "Boost.Static_Assert/1.65.1@bincrafters/testing", \
-                      "Boost.System/1.65.1@bincrafters/testing", \
-                      "Boost.Throw_Exception/1.65.1@bincrafters/testing", \
-                      "Boost.Type_Traits/1.65.1@bincrafters/testing", \
-                      "Boost.Utility/1.65.1@bincrafters/testing"
+    build_requires = "Boost.Generator/1.64.0@bincrafters/testing" 
+    requires =  "Boost.Assert/1.64.0@bincrafters/testing", \
+                      "Boost.Config/1.64.0@bincrafters/testing", \
+                      "Boost.Core/1.64.0@bincrafters/testing", \
+                      "Boost.Integer/1.64.0@bincrafters/testing", \
+                      "Boost.Math/1.64.0@bincrafters/testing", \
+                      "Boost.Mpl/1.64.0@bincrafters/testing", \
+                      "Boost.Range/1.64.0@bincrafters/testing", \
+                      "Boost.Static_Assert/1.64.0@bincrafters/testing", \
+                      "Boost.System/1.64.0@bincrafters/testing", \
+                      "Boost.Throw_Exception/1.64.0@bincrafters/testing", \
+                      "Boost.Type_Traits/1.64.0@bincrafters/testing", \
+                      "Boost.Utility/1.64.0@bincrafters/testing"
 
                       #assert1 config0 core2 integer3 math8 mpl5 range7 static_assert1 system3 throw_exception2 type_traits3 utility5
 
