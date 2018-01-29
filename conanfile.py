@@ -17,19 +17,19 @@ class BoostRandomConan(ConanFile):
     default_options = "shared=False"
     
     requires = (
-        "boost_package_tools/1.66.0@bincrafters/stable",
-        "boost_assert/1.66.0@bincrafters/stable",
-        "boost_config/1.66.0@bincrafters/stable",
-        "boost_core/1.66.0@bincrafters/stable",
-        "boost_integer/1.66.0@bincrafters/stable",
-        "boost_math/1.66.0@bincrafters/stable",
-        "boost_mpl/1.66.0@bincrafters/stable",
-        "boost_range/1.66.0@bincrafters/stable",
-        "boost_static_assert/1.66.0@bincrafters/stable",
-        "boost_system/1.66.0@bincrafters/stable",
-        "boost_throw_exception/1.66.0@bincrafters/stable",
-        "boost_type_traits/1.66.0@bincrafters/stable",
-        "boost_utility/1.66.0@bincrafters/stable"
+        "boost_package_tools/1.66.0@bincrafters/testing",
+        "boost_assert/1.66.0@bincrafters/testing",
+        "boost_config/1.66.0@bincrafters/testing",
+        "boost_core/1.66.0@bincrafters/testing",
+        "boost_integer/1.66.0@bincrafters/testing",
+        "boost_math/1.66.0@bincrafters/testing",
+        "boost_mpl/1.66.0@bincrafters/testing",
+        "boost_range/1.66.0@bincrafters/testing",
+        "boost_static_assert/1.66.0@bincrafters/testing",
+        "boost_system/1.66.0@bincrafters/testing",
+        "boost_throw_exception/1.66.0@bincrafters/testing",
+        "boost_type_traits/1.66.0@bincrafters/testing",
+        "boost_utility/1.66.0@bincrafters/testing"
     )
 
     # BEGIN
@@ -39,7 +39,7 @@ class BoostRandomConan(ConanFile):
     short_paths = True
     generators = "boost"
     settings = "os", "arch", "compiler", "build_type"
-    build_requires = "boost_generator/1.66.0@bincrafters/stable"
+    build_requires = "boost_generator/1.66.0@bincrafters/testing"
 
     def package_id(self):
         getattr(self, "package_id_additional", lambda:None)()
