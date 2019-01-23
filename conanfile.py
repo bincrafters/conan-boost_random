@@ -8,6 +8,7 @@ base = python_requires("boost_base/1.67.0@bincrafters/testing")
 
 class BoostRandomConan(base.BoostBaseConan):
     name = "boost_random"
+    version = "1.67.0"
     url = "https://github.com/bincrafters/conan-boost_random"
     lib_short_names = ["random"]
     options = {"shared": [True, False]}
