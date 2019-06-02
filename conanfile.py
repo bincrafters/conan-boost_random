@@ -4,14 +4,9 @@
 from conans import python_requires
 
 
-base = python_requires("boost_base/1.69.0@bincrafters/testing")
+base = python_requires("boost_base/2.0.0@bincrafters/testing")
+
 
 class BoostRandomConan(base.BoostBaseConan):
     name = "boost_random"
-    version = "1.69.0"
-    url = "https://github.com/bincrafters/conan-boost_random"
-    lib_short_names = ["random"]
-    cycle_group = "boost_cycle_group_c"
-    options = {"shared": [True, False]}
-    default_options = "shared=False"
-    b2_requires = ["boost_cycle_group_c"]
+    version = "1.70.0"
